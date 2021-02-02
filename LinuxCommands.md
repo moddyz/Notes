@@ -1,6 +1,10 @@
-# readelf
+# Linux Commands
 
-`readelf` linux utility.
+## Table of Contents
+
+- [readelf](#readelf)
+
+## readelf
 
 ```bash
 # Query SONAME.
