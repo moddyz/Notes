@@ -23,7 +23,7 @@ readelf -s <OBJECT>
 
 ## find
 ```bash
-# Find and execute a command for _each_ result (substituted into {}).
+# Find and execute a command per-result (substituted into {}).
 find <FIND_ARGS> -exec <COMMAND> {} \;
 
 # Find and execute a single command for all results (substituted into {})
