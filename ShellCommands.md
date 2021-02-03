@@ -1,4 +1,4 @@
-# Linux Commands
+# Shell Commands
 
 ## Table of Contents
 
@@ -19,4 +19,13 @@ readelf -p .GCC.command.line <OBJECT>
 
 # Print symbol table.
 readelf -s <OBJECT>
+```
+
+## find
+```bash
+# Find and execute a command for _each_ result (substituted into {}).
+find <FIND_ARGS> -exec <COMMAND> {} \;
+
+# Find and execute a single command for all results (substituted into {})
+find <FIND_ARGS> -exec <COMMAND> {} +
 ```
