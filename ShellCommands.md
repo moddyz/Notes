@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [find](#find)
+- [nm](#nm)
 - [readelf](#readelf)
 
 ## find
@@ -31,3 +32,9 @@ readelf -p .GCC.command.line <OBJECT>
 readelf -s <OBJECT>
 ```
 
+## nm
+
+```bash
+# Show de-mangled, external symbols.
+nm -Cg <OBJECT>
+```
