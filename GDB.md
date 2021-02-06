@@ -3,6 +3,11 @@
 ## Table of Contents
 
 - [Configuration](#configuration)
+- [Invocation](#invocation)
+- [Logging](#logging)
+- [Environment](#environment)
+- [Inferiors](#inferiors)
+- [Breakpoints](#breakpoints)
 - [TUI Mode](#tui-mode)
 
 ## Configuration
@@ -19,6 +24,64 @@ set pagination off
 
 # Live dangerously.
 set confirm off
+```
+
+## Invocation
+
+```bash
+# Start gdb with a program.
+gdb <PROGRAM>
+
+# Start gdb with a program and additional program arguments.
+gdb --args <PROGRAM> <PROGRAM_ARGS>
+```
+
+## Logging
+
+```bash
+# Log to a specified file.
+set logging file <FILE>
+```
+
+## Environment
+
+```bash
+# Show all environment variables.
+show environment
+
+# Set an environment variable.
+set environment <VARNAME> <VALUE>
+
+# Unset an environment variable.
+unset environment <VARNAME>
+```
+
+## Inferiors
+
+```bash
+```
+
+## Breakpoints
+
+```bash
+# Insert a breakpoint at location.
+break <LOCATION>
+
+# Insert a breakpoint which only stops once at location.
+tbreak <LOCATION>
+
+# Insert a breakpoint onto functions matching the regular expresion.
+rbreak <REGEX>
+
+# Show all breakpoints.
+info breakpoints
+
+# Delete specified breakpoint
+del breakpoints <BREAKPOINT_NUM>
+
+# Delete all breakpoints
+del breakpoints
+
 ```
 
 ## TUI Mode
