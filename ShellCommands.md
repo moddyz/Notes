@@ -7,6 +7,7 @@
 - [find](#find)
 - [nm](#nm)
 - [readelf](#readelf)
+- [watch](#watch)
 
 ## abidiff
 
@@ -54,4 +55,11 @@ readelf -s <OBJECT>
 ```bash
 # Show de-mangled, external symbols.
 nm -Cg <OBJECT>
+```
+
+## watch
+
+```bash
+# Persistently and periodically print output of command.
+watch <COMMAND>
 ```
