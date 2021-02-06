@@ -4,6 +4,7 @@
 
 - [abidiff](#abidiff)
 - [abidw](#abidw)
+- [dpkg](#dpkg)
 - [find](#find)
 - [nm](#nm)
 - [readelf](#readelf)
@@ -22,6 +23,16 @@ abidiff <OBJECT_A> <OBJECT_B>
 ```bash
 # Dump the ABI of a shared object as a XML file.
 abidw <OBJECT>
+```
+
+## dpkg
+
+```bash
+# List installed debian packages.
+dpkg -l (<OPTIONAL_FILTER>)
+
+# List all the files associated with a installed debian package.
+dpkg -L <PACKAGE>
 ```
 
 ## find
