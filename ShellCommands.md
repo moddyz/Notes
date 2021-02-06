@@ -7,6 +7,7 @@
 - [find](#find)
 - [nm](#nm)
 - [readelf](#readelf)
+- [uname](#uname)
 - [watch](#watch)
 
 ## abidiff
@@ -55,6 +56,13 @@ readelf -s <OBJECT>
 ```bash
 # Show de-mangled, external symbols.
 nm -Cg <OBJECT>
+```
+
+## uname
+
+```bash
+# Print detailed information about machine name, operating system, and kernel.
+uname -a
 ```
 
 ## watch
