@@ -25,11 +25,14 @@ set confirm off
 
 ```bash
 # Enter TUI mode.
-Ctrl+X A
+Ctrl-x a
 
 # Previous command.
-Ctrl-P
+Ctrl-p
 
 # Next command.
-Ctrl-N
+Ctrl-n
+
+# Change window focus.
+Ctrl-x o
 ```
