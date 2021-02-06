@@ -1,5 +1,7 @@
 # Shell Commands
 
+Ubuntu-based.
+
 ## Table of Contents
 
 - [abidiff](#abidiff)
