@@ -8,6 +8,7 @@
 - [Environment](#environment)
 - [Inferiors](#inferiors)
 - [Breakpoints](#breakpoints)
+- [Watchpoints](#watchpoints)
 - [TUI Mode](#tui-mode)
 
 ## Configuration
@@ -81,6 +82,15 @@ del breakpoints <BREAKPOINT_NUM>
 
 # Delete all breakpoints
 del breakpoints
+
+```
+
+## Watchpoints
+
+A "data" breakpoint.
+
+```bash
+
 
 ```
 

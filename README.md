@@ -1,5 +1,6 @@
 # Snippets
 
 Organized snippets of useful code/commands/thoughts:
-- [Shell Commands](./ShellCommands.md)
 - [GDB](./GDB.md)
+- [Shell Commands](./ShellCommands.md)
+- [TODO](./TODO.md)
