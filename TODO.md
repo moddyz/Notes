@@ -8,7 +8,7 @@ Lists of things todo.
 - [CI/CD](#ci-cd)
 - [Other languages](#other-languages)
 - [Graphics](#graphics)
-- [Systems Programming](#systems-programming)
+- [Linux Systems Programming](#linux-systems-programming)
 
 ## C++
 
@@ -39,7 +39,7 @@ Lists of things todo.
 - Implement linear blend skinning (C++, CUDA)
 - Implement dual quaternion skinning (C++, CUDA)
 
-## System Programming
+## Linux System Programming
 
 - I/O
 - Process management
