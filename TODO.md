@@ -8,8 +8,7 @@ Lists of things todo.
 - [CI/CD](#ci-cd)
 - [Other languages](#other-languages)
 - [Graphics](#graphics)
-- [Systems](#systems)
-- [Uncategorized](#uncategorized)
+- [Systems Programming](#systems-programming)
 
 ## C++
 
@@ -25,21 +24,28 @@ Lists of things todo.
 
 - Upload test run results as artifacts
 - Upload performance benchmark results as artifacts
+- Set-up a OpenCL Sandbox project
 
 ## Other languages
 
 - Complete the rust book tutorials.
+- Change blog theme to something nicer
 
 ## Graphics
 
 - Read up on MaterialX.
 - Write a rasterization-based renderer with a C interface.
 - Read RenderMan Shading Language guide book.
+- Implement linear blend skinning (C++, CUDA)
+- Implement dual quaternion skinning (C++, CUDA)
 
-## Systems
+## System Programming
 
-- Learn about sockets
+- I/O
+- Process management
+- File management
+- Memory management
+- Signals
+- Time
+- Sockets
 
-## Uncategorized
-
-- Change blog theme to something nicer
