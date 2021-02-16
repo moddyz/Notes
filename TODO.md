@@ -9,6 +9,7 @@ Lists of things todo.
 - [Other languages](#other-languages)
 - [Graphics](#graphics)
 - [Linux Systems Programming](#linux-systems-programming)
+- [Everything else](#everything-else)
 
 ## C++
 
@@ -49,3 +50,6 @@ Lists of things todo.
 - Time
 - Sockets
 
+## Everything else
+
+- Write a bash autocompleter
