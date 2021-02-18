@@ -19,7 +19,7 @@ First-pass-reading notes of "RenderMan Shading Language Guide" (2008).
 - The RIB stream is parsed into RiAPI calls.
 - Once the scene is described, the renderer enters a "splitting loop"  to break primitives into manageable pieces of geometry to be handled efficiently by renderer.
 
-REYES Steps:
+### REYES Steps
 - *Bounding*: each geometry is assigned a bounding box (for subsequent on-screen tests)
 - *Onscreen Test*: bounded geometry are tested against camera frustum to see if they can be culled.
 - *Size Test*: ???
@@ -30,7 +30,7 @@ REYES Steps:
 - *Sample*: Sample micropolygons through pixels.  Smallest pixel sampling rate is 1 by 1 (each pixel sampled once).
 - *Composite and ilter* compositing  of sampled values.
 
-Anatomy of a RIB file:
+### Anatomy of a RIB file
 - `RiBegin` and `RiEnd` can be omitted from the RIB.  The calling render command will initialize Ri state.
 - `FrameBegin`/`FrameEnd` block specifies what goes into a single frame.
 - A RIB file can describe multiple frames.
@@ -43,7 +43,7 @@ Anatomy of a RIB file:
 - RIB uses commands to delimit commands.
 - Comments prefixed with # can be added 
 
-Image control options
+### Image control options
 - `Format` declares the horizontal, vertical, and pixel aspect ratio of the image. ex. `Format 640 480 1.2`
 - `Projection` defines the camera projection parameters (how does the 3D scene project to a 2D image).  ex. `Projection "perspective" "fov" [37.84929]`
 - `Clipping` defines the near and far plane of the viewing volume. 
@@ -52,4 +52,56 @@ Image control options
 - `PixelFilter` controls the how sampled values are composited together into the final pixel. ex. `PixelFilter box 8 8`
 
 ## RSL Details
+
+### Overview
+- C-like higher-level programming language.  RSL can be extended by righting DSO shadeops (precompiled C plugins for RSL)
+- RSL Source code has a `.sl` extension.
+- PRMan's compiled object uses `.slo` extension.
+
+### Shader types
+- _Displacement_ - for modifying the surface positions (or surface normal - which is called bump mapping).  Displacement needs to come first because it modifies normals (which are used for surface shader).
+- _Surface_ - provides the surface color.  Procedural pattern generation, texture lookup happens here.  The _illumination loop_  queries active lights to add their contribution - combined with the final opacity to create the final surface color.
+- _Lights_ - light shaders run in parallel with surface shaders (?) 
+- _Volume_ - simulation of particulate matter.  Exterior volumes are used to simulate dust/haze.  Interior simulates effects such as tinted glass.
+- _Imager_ post-process 2D filters.  Modifies the final color of a surface.
+
+### Variables
+- in the form of `<class> <type> <variableName>`
+- Two classes of variables.  Uniform and varying.  Uniform variables have the same value over the whole grid.  Varying class variables change value inside a shading grid. (what is a shading grid?)
+
+### Data types
+- `float` - represents all numerical values in RSL.  RSL does not have the integer nor boolean type(s).
+- `string` - is available to store text data. Always uniform.
+- `points, vectors, normals` - operations such as multiplication will have a different effect on these types.
+- `color` - defaults to rgb space.
+- `matrix` -  4 x 4 transformation matrix
+- `array` - only support for 1 dimensional arrays 
+
+### Syntax
+- whitespace are ignored.  althoug it must be used to separate keywords and variables
+- EOL are ignore.
+- comments can be start with a leading `//` or wrapped with `/* ... */`
+
+### Shader structure
+```
+shaderType shaderName(shaderParms)
+{
+    ... code ...
+}
+```
+
+Only one shader can be defined per source file.
+
+Shader declaration has a series of parameters with a provided default constant value.
+The user can pass a "primitive variable" into the shader parameter.
+
+Variables declarred in the shader body 
+
+.. a bunch of stuff about shader 
+
+## Shading Writing Process
+
+Things to think about before writing a shader:
+- special attrs provided by the geometry?
+
 
