@@ -4,6 +4,7 @@ Ubuntu-based.
 
 ## Table of Contents
 
+- [bash](#bash)
 - [abidiff](#abidiff)
 - [abidw](#abidw)
 - [dpkg](#dpkg)
@@ -13,6 +14,31 @@ Ubuntu-based.
 - [readelf](#readelf)
 - [uname](#uname)
 - [watch](#watch)
+
+## bash
+
+```bash
+# Go to beginning of line.
+Ctrl + A
+
+# Go to end of line.
+Ctrl + E
+
+# Move cursor one word forward.
+Alt + F
+
+# Move cursor one word backward.
+Alt + B
+
+# Clear the screen.
+Ctrl + l
+
+# Previous command (in history)
+Ctrl + p
+
+# Next command (in history)
+Ctrl + n
+```
 
 ## abidiff
 
