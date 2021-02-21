@@ -3,7 +3,6 @@
 ## Table of Contents
 
 - [Compiling](#compiling)
-- [Linking multiple object files](#linking-multiple-object-files)
 
 ## Compiling 
 
@@ -43,7 +42,8 @@ Common C++ standard options:
 
 Debugging options:
 ```bash
--g # Produces debug information
+-g[0-3] # Produces debug information
+-ggdb[0-3] # Produces debug information for gdb.
 ```
 
 Optimization options: 
