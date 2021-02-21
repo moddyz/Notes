@@ -8,6 +8,7 @@ Ubuntu-based.
 - [abidw](#abidw)
 - [dpkg](#dpkg)
 - [find](#find)
+- [ls](#ls)
 - [nm](#nm)
 - [readelf](#readelf)
 - [uname](#uname)
@@ -45,6 +46,16 @@ find <FIND_ARGS> -exec <COMMAND> {} \;
 
 # Find and execute a single command for all results (substituted into {})
 find <FIND_ARGS> -exec <COMMAND> {} +
+```
+
+## ls
+
+```bash
+# List by modified time in ascending order.
+ls -ltr
+
+# List with human readable file sizes
+ls -lh
 ```
 
 ## readelf
