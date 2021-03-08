@@ -39,6 +39,9 @@ Ctrl + p
 
 # Next command (in history)
 Ctrl + n
+
+# Edit a command to run in a text editor.
+Ctrl + x + e
 ```
 
 ## abidiff
