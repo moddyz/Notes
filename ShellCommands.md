@@ -8,6 +8,7 @@ Ubuntu-based.
 - [abidiff](#abidiff)
 - [abidw](#abidw)
 - [dpkg](#dpkg)
+- [fc](#fc)
 - [find](#find)
 - [ls](#ls)
 - [nm](#nm)
@@ -62,6 +63,13 @@ dpkg -l (<OPTIONAL_FILTER>)
 
 # List all the files associated with a installed debian package.
 dpkg -L <PACKAGE>
+```
+
+## fc
+
+```bash
+# Edit the last command in a text editor and run it after exit.
+fc
 ```
 
 ## find
